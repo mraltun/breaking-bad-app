@@ -1,14 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 const Header = () => {
   return (
     <section>
-      <div className=''>
-        <h2 className=''>Breaking Bad</h2>
-        <ul className=''>
+      <nav className='flex justify-between bg-green-800 h-24 w-full'>
+        <Link to='/'>
+          <img src={logo} alt='' className='w-[10em] pl-3 pt-1' />
+        </Link>
+        <ul className='flex justify-center items-center gap-5 px-10'>
           <li>
-            <Link to='/'>Home</Link>
+            <Link to='/' className='text-gray-300 text-xl '>
+              Home
+            </Link>
           </li>
           <li>
             <Link to='/characters'>Characters</Link>
@@ -26,7 +31,7 @@ const Header = () => {
             <Link to='/about'>About</Link>
           </li>
         </ul>
-      </div>
+      </nav>
     </section>
   );
 };
