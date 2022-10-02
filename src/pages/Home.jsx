@@ -3,7 +3,7 @@
 const Home = () => {
   //   const [character, setCharacter] = useState("");
 
-  return <div>Home</div>;
+  return <main>Home</main>;
 };
 
 export default Home;
