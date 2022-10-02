@@ -5,30 +5,58 @@ import logo from "../assets/logo.png";
 const Header = () => {
   return (
     <section>
-      <nav className='flex justify-between bg-green-800 h-24 w-full'>
+      <nav className='flex justify-between bg-green-800 h-24'>
         <Link to='/'>
           <img src={logo} alt='' className='bg-white h-full' />
         </Link>
         <ul className='flex justify-center items-center gap-5 px-10'>
           <li>
-            <Link to='/' className='text-gray-300 text-xl '>
+            <Link
+              to='/'
+              className='text-white text-xl font-semibold hover:bg-white hover:text-green-800 rounded'
+            >
               Home
             </Link>
           </li>
           <li>
-            <Link to='/characters'>Characters</Link>
+            <Link
+              to='/characters'
+              className='text-white text-xl font-semibold hover:bg-white hover:text-green-800 rounded'
+            >
+              Characters
+            </Link>
           </li>
           <li>
-            <Link to='/episodes'>Episodes</Link>
+            <Link
+              to='/episodes'
+              className='text-white text-xl font-semibold hover:bg-white hover:text-green-800 rounded'
+            >
+              Episodes
+            </Link>
           </li>
           <li>
-            <Link to='/quotes'>Quotes</Link>
+            <Link
+              to='/quotes'
+              className='text-white text-xl font-semibold hover:bg-white hover:text-green-800 rounded'
+            >
+              Quotes
+            </Link>
           </li>
           <li>
-            <Link to='/deaths'>Deaths</Link>
+            <Link
+              to='/deaths'
+              className='text-white text-xl font-semibold hover:bg-white hover:text-green-800 rounded'
+            >
+              Deaths
+            </Link>
           </li>
           <li>
-            <Link to='/about'>About</Link>
+            <Link
+              to='/about'
+              className='text-white text-xl font-semibold hover:bg-white hover:text-green-800 rounded'
+            >
+              About
+            </Link>
           </li>
         </ul>
       </nav>
