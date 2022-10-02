@@ -7,7 +7,7 @@ const Header = () => {
     <section>
       <nav className='flex justify-between bg-green-800 h-24 w-full'>
         <Link to='/'>
-          <img src={logo} alt='' className='w-[10em] pl-3 pt-1' />
+          <img src={logo} alt='' className='bg-white h-full' />
         </Link>
         <ul className='flex justify-center items-center gap-5 px-10'>
           <li>
