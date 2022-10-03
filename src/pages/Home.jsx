@@ -1,9 +1,13 @@
-// import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 const Home = () => {
-  //   const [character, setCharacter] = useState("");
+  const [character, setCharacter] = useState("");
 
-  return <main>Home</main>;
+  return (
+    <main>
+      <div>Hello</div>
+    </main>
+  );
 };
 
 export default Home;
