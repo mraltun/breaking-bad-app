@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section>
       <div className='flex items-center justify-center flex-col'>
-        <h1 className='text-4xl font-bold py-10 text-green-800'>
+        <h1 className='text-4xl font-bold py-20 text-green-800 '>
           App for the Breaking Bad TV Series
         </h1>
         <p className='px-5 pb-5'>
@@ -37,8 +37,8 @@ const About = () => {
           cartels (including their regional distributors), putting him and his
           family's lives at risk.
         </p>
-        <p className='text-green-800'>
-          Thanks for the &nbsp;
+        <p className='text-green-800 font-semibold'>
+          Made by using &nbsp;
           <span className='text-lg hover:bg-green-800 hover:text-white'>
             <a
               target={"_blank"}

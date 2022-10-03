@@ -4,7 +4,9 @@ import React from "react";
 const Footer = () => {
   return (
     <Footer>
-      <div className=''></div>
+      <div className='flex bg-green-800'>
+        <p>Made by using React</p>
+      </div>
     </Footer>
   );
 };
