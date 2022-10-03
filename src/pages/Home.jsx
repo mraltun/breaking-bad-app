@@ -1,22 +1,13 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import Search from "../components/Search";
 import Grid from "../components/Grid";
+import useFetch from "../hooks/useFetch";
 
 const Home = () => {
   const [characters, setCharacters] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await axios(
-        `https://www.breakingbadapi.com/api/characters?limit=8`
-      );
-      setCharacters(response.data);
-      console.log(characters);
-    };
-
-    fetchData();
-  }, []);
+  const { data, error, isLoading } = useFetch(
+    "https://www.breakingbadapi.com/api/characters?limit=8"
+  );
 
   return (
     <main>
@@ -25,7 +16,7 @@ const Home = () => {
       </section>
       <div>Hello</div>
       <section>
-        <Grid characters={characters} />
+        <Grid data={data} />
       </section>
     </main>
   );

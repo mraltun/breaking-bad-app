@@ -1,12 +1,12 @@
 import React from "react";
 
-const Grid = ({ characters }) => {
+const Grid = ({ data }) => {
   return (
     <ul
       role='list'
       className='grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'
     >
-      {characters.map((person) => (
+      {data.map((person) => (
         <li
           key={person.name}
           className='col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200'
