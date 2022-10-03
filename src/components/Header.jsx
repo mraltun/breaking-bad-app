@@ -14,11 +14,7 @@ const Header = () => {
             <li>
               <NavLink
                 to='/'
-                className={({ isActive }) =>
-                  isActive
-                    ? "text-green-800 bg-white text-xl font-semibold rounded"
-                    : "text-white text-xl font-semibold"
-                }
+                className='text-white text-xl font-semibold hover:bg-white hover:text-green-800 rounded'
               >
                 Home
               </NavLink>
@@ -26,7 +22,11 @@ const Header = () => {
             <li>
               <NavLink
                 to='characters'
-                className='text-white text-xl font-semibold hover:bg-white hover:text-green-800 rounded'
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-green-800 bg-white text-xl  font-semibold rounded"
+                    : "text-white text-xl font-semibold hover:bg-white hover:text-green-800 rounded"
+                }
               >
                 Characters
               </NavLink>
@@ -34,7 +34,11 @@ const Header = () => {
             <li>
               <NavLink
                 to='episodes'
-                className='text-white text-xl font-semibold hover:bg-white hover:text-green-800 rounded'
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-green-800 bg-white text-xl  font-semibold rounded"
+                    : "text-white text-xl font-semibold hover:bg-white hover:text-green-800 rounded"
+                }
               >
                 Episodes
               </NavLink>
@@ -42,7 +46,11 @@ const Header = () => {
             <li>
               <NavLink
                 to='quotes'
-                className='text-white text-xl font-semibold hover:bg-white hover:text-green-800 rounded'
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-green-800 bg-white text-xl  font-semibold rounded"
+                    : "text-white text-xl font-semibold hover:bg-white hover:text-green-800 rounded"
+                }
               >
                 Quotes
               </NavLink>
@@ -50,7 +58,11 @@ const Header = () => {
             <li>
               <NavLink
                 to='deaths'
-                className='text-white text-xl font-semibold hover:bg-white hover:text-green-800 rounded'
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-green-800 bg-white text-xl  font-semibold rounded"
+                    : "text-white text-xl font-semibold hover:bg-white hover:text-green-800 rounded"
+                }
               >
                 Deaths
               </NavLink>
@@ -58,7 +70,11 @@ const Header = () => {
             <li>
               <NavLink
                 to='about'
-                className='text-white text-xl font-semibold hover:bg-white hover:text-green-800 rounded'
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-green-800 bg-white text-xl  font-semibold rounded"
+                    : "text-white text-xl font-semibold hover:bg-white hover:text-green-800 rounded"
+                }
               >
                 About
               </NavLink>

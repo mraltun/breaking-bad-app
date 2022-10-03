@@ -16,11 +16,11 @@ const App = () => {
         <Header />
         <Routes>
           <Route index path='/' element={<Home />} />
-          <Route path='/characters' element={<Characters />} />
-          <Route path='/episodes' element={<Episodes />} />
-          <Route path='/quotes' element={<Quotes />} />
-          <Route path='/deaths' element={<Deaths />} />
-          <Route path='/about' element={<About />} />
+          <Route path='characters' element={<Characters />} />
+          <Route path='episodes' element={<Episodes />} />
+          <Route path='quotes' element={<Quotes />} />
+          <Route path='deaths' element={<Deaths />} />
+          <Route path='about' element={<About />} />
         </Routes>
         <Footer />
       </BrowserRouter>
