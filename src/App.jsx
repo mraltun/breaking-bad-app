@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import About from "./pages/About";
 import Characters from "./pages/Characters";
@@ -21,6 +22,7 @@ const App = () => {
           <Route path='/deaths' element={<Deaths />} />
           <Route path='/about' element={<About />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );
