@@ -1,4 +1,5 @@
 import React from "react";
+import coverImg from "../assets/ep-cover.jpg";
 
 const Grid = ({ data, type }) => {
   let renderData;
@@ -41,8 +42,8 @@ const Grid = ({ data, type }) => {
           >
             <div className='flex-1 flex flex-col p-8'>
               <img
-                className='w-52 h-52 flex-shrink-0 mx-auto rounded'
-                src={item.img}
+                className='h-52 bg-cover w-full flex-shrink-0 mx-auto rounded'
+                src={coverImg}
                 alt=''
               />
               <h3 className='mt-5 text-gray-900 text-sm font-medium'>
