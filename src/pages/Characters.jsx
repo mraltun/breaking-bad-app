@@ -14,7 +14,7 @@ const Characters = () => {
       <div>
         {isPending && <p className='text-4xl text-center py-32'>Loading...</p>}
         {error && <p className='text-2xl text-center py-32'>Error! {error}</p>}
-        <section>{data && <Grid data={data} />}</section>
+        <section>{data && <Grid data={data} type={"characters"} />}</section>
       </div>
     </section>
   );
