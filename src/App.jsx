@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import CharGrid from "./components/CharGrid";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import About from "./pages/About";
@@ -20,6 +21,7 @@ const App = () => {
           <Route path='episodes' element={<Episodes />} />
           <Route path='quotes' element={<Quotes />} />
           <Route path='deaths' element={<Deaths />} />
+          <Route path='deaths/:deathId' element={<CharGrid />} />
           <Route path='about' element={<About />} />
         </Routes>
         <Footer />

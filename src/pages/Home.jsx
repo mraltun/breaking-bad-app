@@ -46,7 +46,7 @@ const Home = () => {
             ))}
           </ul>
         )}
-        {error && <p className='text-2xl text-center py-32'>Error! {error}</p>}
+        {/* {error && <p className='text-2xl text-center py-32'>Error! {error}</p>} */}
       </section>
     </main>
   );
