@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import crimeScene from "../assets/crime-scene.jpeg";
+import crimeScene from "../assets/crime-scene.jpg";
 // import useFetch from "../hooks/useFetch";
 
 const Deaths = () => {
@@ -39,7 +39,7 @@ const Deaths = () => {
   }
 
   return (
-    <div className='px-10 py-20 grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-10'>
+    <div className='px-10 py-20 grid sm:grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-5'>
       {data &&
         data.map((death) => (
           <div className='' key={death.death_id}>
@@ -54,7 +54,7 @@ const Deaths = () => {
               />
 
               <div className='px-3 py-2'>
-                <h1 className='font-semibold'>{death.death}</h1>
+                <h3 className='font-semibold'>{death.death}</h3>
                 <p>Season {death.season}</p>
               </div>
             </Link>
