@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import crimeScene from "../assets/crime-scene.jpg";
 
-const CharGrid = () => {
+const DeathGrid = () => {
   const { deathId } = useParams();
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -41,23 +42,23 @@ const CharGrid = () => {
   }
 
   return (
-    <div>
+    <section>
       {data && (
-        <section>
-          <div className='flex justify-center items-center'>
-            <div className='flex flex-col'>
-              <h4>The Deceased</h4>
-              <p>{data.death}</p>
+        <div className='h-screen flex items-center justify-center'>
+          <card className='flex flex-col rounded-lg shadow-lg w-1/2  bg-white'>
+            <div className='flex justify-center'>
+              <img src={crimeScene} />
             </div>
-            <div>
-              <h4>The Responsible</h4>
-              <p>{data.responsible}</p>
-            </div>
-          </div>
-        </section>
+            <p className='text-center text-gray-800 text-4xl mt-8'>
+              Death Details
+            </p>
+            The Deceased
+            <p className='text-center text-gray-700 font-light'>{data.death}</p>
+          </card>
+        </div>
       )}
-    </div>
+    </section>
   );
 };
 
-export default CharGrid;
+export default DeathGrid;
