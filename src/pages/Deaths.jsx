@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import crimeScene from "../assets/crime-scene.jpeg";
 // import useFetch from "../hooks/useFetch";
 
 const Deaths = () => {
@@ -38,26 +39,23 @@ const Deaths = () => {
   }
 
   return (
-    <div className='px-10 py-20'>
+    <div className='px-10 py-20 grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-10'>
       {data &&
         data.map((death) => (
-          <div
-            className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-10'
-            key={death.death_id}
-          >
+          <div className='' key={death.death_id}>
             <Link
               to={`${death.death_id}`}
               className='flex flex-col bg-white drop-shadow hover:drop-shadow-lg hover:opacity-70 rounded-md'
             >
               <img
-                src=' https://www.kindacode.com/wp-content/uploads/2022/07/kindacode-example.png'
-                alt='Fiction Product'
+                src={crimeScene}
+                alt='Crime Scene logo'
                 className='h-36 object-cover rounded-tl-md rounded-tr-md'
               />
 
               <div className='px-3 py-2'>
-                <h1 className='font-semibold'>Product One</h1>
-                <p className='text-sm'>$69.69</p>
+                <h1 className='font-semibold'>{death.death}</h1>
+                <p>Season {death.season}</p>
               </div>
             </Link>
           </div>

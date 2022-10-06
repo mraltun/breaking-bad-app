@@ -22,6 +22,7 @@ const CharGrid = () => {
           (death) => String(death.death_id) === deathId
         );
         setData(newDeath);
+        console.log(newDeath);
         setIsLoading(false);
       } catch (error) {
         setError(error);
@@ -43,7 +44,16 @@ const CharGrid = () => {
     <div>
       {data && (
         <section>
-          <div className='flex justify-center items-center'></div>
+          <div className='flex justify-center items-center'>
+            <div className='flex flex-col'>
+              <h4>The Deceased</h4>
+              <p>{data.death}</p>
+            </div>
+            <div>
+              <h4>The Responsible</h4>
+              <p>{data.responsible}</p>
+            </div>
+          </div>
         </section>
       )}
     </div>
