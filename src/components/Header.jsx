@@ -14,7 +14,7 @@ const Header = () => {
             <li>
               <NavLink
                 to='/'
-                className='text-white text-xl font-semibold hover:bg-white hover:text-green-800 rounded'
+                className='text-white text-xl font-semibold hover:border-b-4'
               >
                 Home
               </NavLink>
@@ -24,8 +24,8 @@ const Header = () => {
                 to='characters'
                 className={({ isActive }) =>
                   isActive
-                    ? "text-green-800 bg-white text-xl  font-semibold rounded"
-                    : "text-white text-xl font-semibold hover:bg-white hover:text-green-800 rounded"
+                    ? "border-b-4 text-white text-xl font-semibold "
+                    : "hover:border-b-4 text-white text-xl font-semibold "
                 }
               >
                 Characters
@@ -36,8 +36,8 @@ const Header = () => {
                 to='episodes'
                 className={({ isActive }) =>
                   isActive
-                    ? "text-green-800 bg-white text-xl  font-semibold rounded"
-                    : "text-white text-xl font-semibold hover:bg-white hover:text-green-800 rounded"
+                    ? "border-b-4 text-white text-xl font-semibold "
+                    : "hover:border-b-4 text-white text-xl font-semibold "
                 }
               >
                 Episodes
@@ -48,8 +48,8 @@ const Header = () => {
                 to='quotes'
                 className={({ isActive }) =>
                   isActive
-                    ? "text-green-800 bg-white text-xl  font-semibold rounded"
-                    : "text-white text-xl font-semibold hover:bg-white hover:text-green-800 rounded"
+                    ? "border-b-4 text-white text-xl font-semibold "
+                    : "hover:border-b-4 text-white text-xl font-semibold "
                 }
               >
                 Quotes
@@ -60,8 +60,8 @@ const Header = () => {
                 to='deaths'
                 className={({ isActive }) =>
                   isActive
-                    ? "text-green-800 bg-white text-xl  font-semibold rounded"
-                    : "text-white text-xl font-semibold hover:bg-white hover:text-green-800 rounded"
+                    ? "border-b-4 text-white text-xl font-semibold "
+                    : "hover:border-b-4 text-white text-xl font-semibold "
                 }
               >
                 Deaths
@@ -72,8 +72,8 @@ const Header = () => {
                 to='about'
                 className={({ isActive }) =>
                   isActive
-                    ? "text-green-800 bg-white text-xl  font-semibold rounded"
-                    : "text-white text-xl font-semibold hover:bg-white hover:text-green-800 rounded"
+                    ? "border-b-4 text-white text-xl font-semibold "
+                    : "hover:border-b-4 text-white text-xl font-semibold "
                 }
               >
                 About
