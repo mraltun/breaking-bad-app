@@ -47,7 +47,7 @@ const DeathGrid = () => {
         <div className='flex items-center justify-center min-h-screen'>
           <div className='flex flex-col rounded-lg shadow-lg w-1/2  bg-white'>
             <div className='flex justify-center'>
-              <img src={crimeScene} alt='' className='w-full h-52' />
+              <img src={crimeScene} alt='' className='h-52' />
             </div>
             <h1 className='text-center text-gray-800 text-5xl mt-5 mb-6'>
               Death Details

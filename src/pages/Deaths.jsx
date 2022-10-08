@@ -39,7 +39,7 @@ const Deaths = () => {
   }
 
   return (
-    <div className='px-10 py-10 grid sm:grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-5'>
+    <div className='px-10 py-10 grid sm:grid-cols-2 md:grid-cols-4 gap-4'>
       {data &&
         data.map((death) => (
           <div className='' key={death.death_id}>
